@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ЗАО Птицефабрика №1</title>
+</head>
+<body>
+
+    <h1>ЗАО Птицефабрика №1</h1>
+
+    <form action="#" method="post">
+        <table align="center" cellpadding="5">
+            <tr>
+                <td align="right"><label for="surname">Фамилия</label></td>
+                <td><input type="text" id="surname" name="surname" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="initials">Инициалы</label></td>
+                <td><input type="text" id="initials" name="initials" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="password">Пароль</label></td>
+                <td><input type="password" id="password" name="password" size="30"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="address">Адрес получателя</label></td>
+                <td><input type="text" id="address" name="address" size="50"></td>
+            </tr>
+            <tr>
+                <td align="right"><label for="quantity">Количество</label></td>
+                <td><input type="number" id="quantity" name="quantity" size="10" min="1"></td>
+            </tr>
+            <tr>
+                <td align="right">Тип</td>
+                <td>
+                    <select name="type1">
+                        <option value="chicken">Куриные</option>
+                        <option value="duck">Утиные</option>
+                        <option value="goose">Гусиные</option>
+                    </select>
+                    <select name="type2">
+                        <option value="select">Отборные</option>
+                        <option value="first">Первые</option>
+                        <option value="second">Вторые</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Доставка</td>
+                <td>
+                    <label><input type="radio" name="delivery" value="mail"> Почтой</label>
+                    <label><input type="radio" name="delivery" value="electronic"> Электронно</label>
+                    <label><input type="radio" name="delivery" value="courier"> Курьером</label>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Требуется накладная</td>
+                <td><input type="checkbox" name="invoice" value="yes"></td>
+            </tr>
+            <tr>
+                <td align="right" valign="top"><label for="info">Дополнительная информация</label></td>
+                <td><textarea id="info" name="info" rows="4" cols="50"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Отправить">
+                    <input type="reset" value="Очистить">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
